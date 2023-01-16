@@ -39,6 +39,6 @@ Some commands include:
 ![Image](shot7.png)
 *Trying the `cp` and `cat` commands*
 ![Image](shot8.png)
-
+---
 * To log out of the remote server in the terminal use:
 * Ctrl-D or command `exit`
