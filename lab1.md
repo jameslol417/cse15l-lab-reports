@@ -12,7 +12,7 @@
 
 * Open your terminal in VS Code by either (Ctrl or Command + \` or use the Ternimal > New Terminal menu option.)
 * Then type `ssh cs15lwi23zz@ieng6.ucsd.edu` and replacing zz with the letters in your course specific account.
-*You can look for your own CSE15L account with the link [Link](https://sdacs.ucsd.edu/~icc/index.php)*
+*You can look for your own CSE15L account with the [link](https://sdacs.ucsd.edu/~icc/index.php)*
 * The terminal will ask for your password like below 
 ![Image](shot2.png)
 
