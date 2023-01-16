@@ -31,10 +31,10 @@ Some commands include:
 * `cat <filename>` where `<file>` is
 ---
 * Here are some examples of using the above commands in the Remote Server
-![Image](shot4.png)
-*Running `ls -a` and `ls -lat`*. 
+![Image](shot4.png)\
+*Running `ls -a` and `ls -lat`*
 ![Image](shot5.png) 
-![Image](shot6.png). 
+![Image](shot6.png)
 *Trying to access other people's directories will lead to Permission denied which is normal*
 ![Image](shot7.png)
 *Trying the `cp` and `cat` commands*
