@@ -29,6 +29,7 @@ Some commands include:
 * `ls <directory>` where `<directory>` is
 * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
 * `cat <filename>` where `<file>` is
+
 ---
 * Here are some examples of using the above commands in the Remote Server
 ![Image](shot4.png)\
