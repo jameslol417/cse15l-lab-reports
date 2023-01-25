@@ -23,17 +23,21 @@
 **Running Some Commands**
 * Aftering getting access to the Remote Server, it is time to try some commands
 Some commands include:
+* cd ~[username] goes to another user’s home directory.
 * `cd ~`
 * `cd`
-* `ls -lat`
+* ls command lists files and directories within a system. 
+* `ls -lat` ("-lat" shows a list of all files sorted by date)
 * `ls <directory>` where `<directory>` is
+* cp command copies files or directories and their content
 * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
+* cat lists, combines, and writes file content to the standard output
 * `cat <filename>` where `<file>` is
 
 ---
 * Here are some examples of using the above commands in the Remote Server
 ![Image](shot4.png)\
-*Running `ls -a` and `ls -lat`*
+*Running `ls -a`(list all files including hidden) and `ls -lat`*
 ![Image](shot5.png) 
 ![Image](shot6.png)
 *Trying to access other people's directories will lead to Permission denied which is normal*
