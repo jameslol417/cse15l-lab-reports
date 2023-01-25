@@ -23,15 +23,15 @@
 **Running Some Commands**
 * Aftering getting access to the Remote Server, it is time to try some commands
 Some commands include:
-* cd ~[username] goes to another user’s home directory.
+cd ~[username] goes to another user’s home directory.
 * `cd ~`
 * `cd`
-* ls command lists files and directories within a system. 
+ls command lists files and directories within a system. 
 * `ls -lat` ("-lat" shows a list of all files sorted by date)
 * `ls <directory>` where `<directory>` is
-* cp command copies files or directories and their content
+cp command copies files or directories and their content
 * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
-* cat lists, combines, and writes file content to the standard output
+cat lists, combines, and writes file content to the standard output
 * `cat <filename>` where `<file>` is
 
 ---
