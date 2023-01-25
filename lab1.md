@@ -36,7 +36,7 @@ Some commands include:
 
 ---
 * Here are some examples of using the above commands in the Remote Server
-![Image](shot4.png)
+![Image](shot4.png)  
 *Running `ls -a`(list all files including hidden) and `ls -lat`*
 ![Image](shot5.png) 
 ![Image](shot6.png)
