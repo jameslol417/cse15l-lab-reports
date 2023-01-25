@@ -22,8 +22,8 @@
 
 **Running Some Commands**
 * Aftering getting access to the Remote Server, it is time to try some commands
-Some commands include:
-cd ~[username] goes to another user’s home directory.
+Some commands include: \\
+cd ~[username] goes to another user’s home directory. 
 * `cd ~`
 * `cd`
 ls command lists files and directories within a system. 
