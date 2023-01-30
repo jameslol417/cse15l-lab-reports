@@ -3,7 +3,7 @@
 
 **Part 1: Making StringServer**  
 The code for StringServer is as below  
-`
+```
 import java.io.IOException;
 import java.net.URI;
 
@@ -40,4 +40,4 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-`
+```
