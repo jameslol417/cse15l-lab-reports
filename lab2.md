@@ -69,8 +69,30 @@ The bug for this case is the method *reversed* in ArrayExamples.java.
     assertArrayEquals(new int[]{ 0, 0, 0}, ArrayExamples.reversed(input1));
   }
 ```
-* The symptom for inputting the failure inducing input can be seen as resulting in an int[] array containing {0,0,0}.
+* The symptom for inputting the failure inducing input can be seen as resulting in an int[] array containing only zeros instead of reversing the array as intended.
 ![Image](2-3.png)  
 *failure*  
 ![Image](2-4.png)   
 *success*  
+
+There is bug in the code is where instead of `arr[i] = newArray[arr.length - i - 1];`
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+it should be `newArray[i] = arr[arr.length - i - 1];` and the method should set `arr = newArray` to account for the reversal of the array.
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    arr = newArray
+    return arr;
+  }
+```
