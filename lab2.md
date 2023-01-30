@@ -85,7 +85,7 @@ There is bug in the code is where instead of `arr[i] = newArray[arr.length - i -
     return arr;
   }
 ```
-it should be `newArray[i] = arr[arr.length - i - 1];` and the method should set `arr = newArray` to account for the reversal of the array.
+it should be `newArray[i] = arr[arr.length - i - 1];` and the method should set `arr = newArray;` to account for the reversal of the array.
 ```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -96,3 +96,4 @@ it should be `newArray[i] = arr[arr.length - i - 1];` and the method should set 
     return arr;
   }
 ```
+This addresses the issue of only outputting int[] arrays filled with zeros as the new code makes sure the elements of the original array *arr* is copied into the new array *newArray* using a for loop. Then, instead of just returning the original array, the new code sets the variable *arr* to reference the newly reversed array *newArray* before returning *arr*.  
