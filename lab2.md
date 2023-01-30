@@ -43,7 +43,34 @@ class StringServer {
 ```  
 ![Image](2-1.png)  
 * When typing in the following url: *localhost:4000/add-message?s=pineapple*, the method handleRequest from class Handler is called.
-* Relevant arguments for the method above is the *URI url*. The field *String result* stores the data + "\n"(newline) for each input that is taken in the query part(after ?) of the url. The value for the *String result* is changed from ""(empty String) to "pineapple\n" after taking in the above url as a request.   
+* Relevant arguments for the method above is the *URI url*. The field *String result* stores the input + "\n"(newline) for each input that is taken in the query part(after ?) of the url. The value for the *String result* is changed from ""(empty String) to "pineapple\n" after taking in the above url as a request.   
 ![Image](2-2.png)  
 * When typing in the following url: *localhost:4000/add-message?s=pancake*, the method handleRequest from class Handler is called.
-* Relevant arguments for the method above is the *URI url*. The value for the *String result* is changed from "pineapple\n"(empty String) to "pineapple\pancake\n" after taking in the above url as a request.
+* Relevant arguments for the method above is the *URI url*. The value for the *String result* is changed from "pineapple\n"(empty String) to "pineapple\npancake\n" after taking in the above url as a request.   
+
+---
+
+**Part 2: Bug Fixing**
+
+The bug for this case is the method *reversed* in ArrayExamples.java. 
+* An example of a failure inducing input is
+```
+  @Test
+  public void testReversed1() {
+    int[] input1 = {1, 2, 3};
+    assertArrayEquals(new int[]{ 3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+```
+* An example of an input that doesn't induce failure is
+```
+  @Test
+  public void testReversed2() {
+    int[] input1 = {0, 0, 0};
+    assertArrayEquals(new int[]{ 0, 0, 0}, ArrayExamples.reversed(input1));
+  }
+```
+* The symptom for inputting the failure inducing input can be seen as resulting in an int[] array containing {0,0,0}.
+![Image](2-3.png)  
+*failure*  
+![Image](2-4.png)   
+*success*  
