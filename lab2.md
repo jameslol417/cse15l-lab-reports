@@ -97,3 +97,10 @@ it should be `newArray[i] = arr[arr.length - i - 1];` and the method should set 
   }
 ```
 This addresses the issue of only outputting int[] arrays filled with zeros as the new code makes sure the elements of the original array *arr* is copied into the new array *newArray* using a for loop. Then, instead of just returning the original array, the new code sets the variable *arr* to reference the newly reversed array *newArray* before returning *arr*.  
+
+
+---
+
+**Part 3: Lessons Learned**
+
+By doing Lab 2 and Lab 3, I learned how to setup and launch a website either hosted in my own laptop or the UCSD lab server computer. It was interesting to see how other people could interact with a website I made myself by designating specific paths and query terms to do specific tasks in the website code. Also, by doing many examples of ascertaining symptoms and bugs from code, I believe it has helped me better debug my code for errors by using JUnit. It was helpful dividing the debugging process into noting the failure-inducing inputs, the symptom, and the bug as it helped clarify the situation. I will try incorporating this process into future code development as fixing bugs and making documentation is just as important as the developing the code itself.
