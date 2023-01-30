@@ -2,7 +2,7 @@
 ---
 
 **Part 1: Making StringServer**  
-The code for StringServer is as below
+The code for StringServer is as below  
 `import java.io.IOException;  
 import java.net.URI;  
 class Handler implements URLHandler {  
