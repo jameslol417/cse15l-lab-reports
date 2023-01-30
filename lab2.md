@@ -42,7 +42,7 @@ class StringServer {
 }
 ```
 
-* When typing in the following url: [Link](localhost:4000/add-message?s=pineapple), the method handleRequest from class Handler is called.
+* When typing in the following url: *localhost:4000/add-message?s=pineapple*, the method handleRequest from class Handler is called.
 * Relevant arguments for the method above is the *URI url*. The field *String result* stores the data + "\n"(newline) for each input that is taken in the query part(after ?) of the url. The value for the *String result* is changed from ""(empty String) to "pineapple\n" after taking in the above url as a request.
-* When typing in the following url: [Link](localhost:4000/add-message?s=pancake), the method handleRequest from class Handler is called.
+* When typing in the following url: *localhost:4000/add-message?s=pancake*, the method handleRequest from class Handler is called.
 * Relevant arguments for the method above is the *URI url*. The value for the *String result* is changed from "pineapple\n"(empty String) to "pineapple\pancake\n" after taking in the above url as a request.
