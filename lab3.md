@@ -45,3 +45,17 @@ The logo of the technology company Apple Inc. features a stylized apple with a b
 In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
 Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
 ```
+## Displaying the Number of Matches -c
+We can find the number of lines that matches the given string/pattern.    
+**Input**   
+`$grep -c "Apple" file.txt`     
+**Output**    
+```
+4
+```
+**Input**   
+`$grep -c "the" file.txt`     
+**Output**    
+```
+4
+```
