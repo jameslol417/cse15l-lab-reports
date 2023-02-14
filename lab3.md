@@ -12,7 +12,7 @@ Here are some examples of options that you can use with grep.
 -v : This prints out all the lines that do not matches the pattern
 ```
 
-# Examples
+## * Examples
 Consider the following .txt file as input  
 `$cat > file.txt`
 ```
