@@ -56,13 +56,15 @@ We can find the number of lines that matches the given string/pattern.
 ```
 4
 ```
+The above command is looking for the number of lines that contains the exact same string pattern for "Apple" in file.txt. It is useful for searching up the number of instances a specific word is used within a file.
 **Input**   
 `$grep -c "the" file.txt`     
 **Output**    
 ```
 4
 ```
-## Show line number with Output Using Grep -n
+The above command is looking for the number of lines that contains the exact same string pattern for "the" in file.txt. It is useful for searching up the number of instances a specific word is used within a file.
+## Show line number with Output -n
 To show the line number of file with the line matched. 
 **Input**   
 `$grep -n "Apple" file.txt`     
@@ -71,6 +73,7 @@ To show the line number of file with the line matched.
 4: The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
 6: Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
 ```
+The above command is looking for lines and number of line within the file that contains the exact same string pattern for "Apple" in file.txt. It is useful for searching up for where exactly the string is located within a file.
 **Input**   
 `$grep -n "the" file.txt`   
 **Output**    
@@ -79,4 +82,25 @@ To show the line number of file with the line matched.
 4: The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
 5: In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
 ```
-##
+The above command is looking for lines and number of line within the file that contains the exact same string pattern for "the" in file.txt. It is useful for searching up for where exactly the string is located within a file.
+## Inverting the Pattern Match -v 
+You can display the lines that are not matched with the specified search string pattern using the -v option.  
+**Input**   
+`$grep -v "Apple" file.txt`     
+**Output**    
+```
+Apples are a type of fruit that come in various colors such as red, green, and yellow.
+Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
+Apples can be used in a variety of dishes such as pies, crisps, and sauces.
+In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
+```
+The above command is looking for lines within the file that does **not** contain the exact same string pattern for "Apple" in file.txt. It is useful for looking up lines that does not include a specific string.
+**Input**   
+`$grep -v "the" file.txt`   
+**Output**    
+```
+Apples are a type of fruit that come in various colors such as red, green, and yellow.
+Apples can be used in a variety of dishes such as pies, crisps, and sauces.
+Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
+```
+The above command is looking for lines within the file that does **not** contain the exact same string pattern for "the" in file.txt. It is useful for looking up lines that does not include a specific string.
