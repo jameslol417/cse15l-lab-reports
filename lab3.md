@@ -12,7 +12,7 @@ Here are some examples of options that you can use with grep.
 -v : This prints out all the lines that do not matches the pattern
 ```
 
-## * Examples
+## Examples
 Consider the following .txt file as input  
 `$cat > file.txt`
 ```
@@ -37,7 +37,7 @@ The logo of the technology company Apple Inc. features a stylized apple with a b
 In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
 Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
 ```
-The above command is looking for a line that contains the same case-insensitive string pattern for "APpLe" in file.txt. It is useful for searching up all instances of a word without thinking about the uppercase and lowercase of each letter.  
+* The above command is looking for a line that contains the same case-insensitive string pattern for "APpLe" in file.txt. It is useful for searching up all instances of a word without thinking about the uppercase and lowercase of each letter.  
 **Input**   
 `$grep -i "tHe" file.txt`   
 **Output**    
@@ -47,7 +47,7 @@ The logo of the technology company Apple Inc. features a stylized apple with a b
 In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
 Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
 ```
-The above command is looking for a line that contains the same case-insensitive string pattern for "tHe" in file.txt. It is useful for searching up all instances of a word without thinking about the uppercase and lowercase of each letter.  
+* The above command is looking for a line that contains the same case-insensitive string pattern for "tHe" in file.txt. It is useful for searching up all instances of a word without thinking about the uppercase and lowercase of each letter.  
 ## Displaying the Number of Matches -c
 We can find the number of lines that matches the given string/pattern.    
 **Input**   
