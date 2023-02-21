@@ -24,7 +24,7 @@ In Greek mythology, the golden apple was a symbol of temptation and was the cata
 Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
 ```
 
-## Case Insensitive Search -i | Source: [Link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+## Case Insensitive Search -i | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 The -i option enables to search for a string case insensitively in the given file. "ApPle" and "APpLe" will result in the same result.  
 **Input**   
 `$grep -i "APpLe" file.txt`     
@@ -50,7 +50,7 @@ Apple cider is a popular autumn beverage made from fermented apples and often sp
 ```
 The above command is looking for a line that contains the same case-insensitive string pattern for "tHe" in file.txt. It is useful for searching up all instances of a word without thinking about the uppercase and lowercase of each letter.  
   
-## Displaying the Number of Matches -c | Source: [Link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+## Displaying the Number of Matches -c | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 We can find the number of lines that matches the given string/pattern.    
 **Input**   
 `$grep -c "Apple" file.txt`     
@@ -68,7 +68,7 @@ The above command is looking for the number of lines that contains the exact sam
 ```
 The above command is looking for the number of lines that contains the exact same string pattern for "the" in file.txt. It is useful for searching up the number of instances a specific word is used within a file.
 
-## Show line number with Output -n | Source: [Link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+## Show line number with Output -n | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 To show the line number of file with the line matched. 
 **Input**   
 `$grep -n "Apple" file.txt`     
@@ -89,7 +89,7 @@ The above command is looking for lines and number of line within the file that c
 ```
 The above command is looking for lines and number of line within the file that contains the exact same string pattern for "the" in file.txt. It is useful for searching up for where exactly the string is located within a file.
 
-## Inverting the Pattern Match -v | Source: [Link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+## Inverting the Pattern Match -v | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 You can display the lines that are not matched with the specified search string pattern using the -v option.  
 **Input**   
 `$grep -v "Apple" file.txt`     
