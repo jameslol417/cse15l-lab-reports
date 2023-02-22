@@ -14,59 +14,41 @@ Here are some examples of options that you can use with grep.
 
 ## Examples
 Consider the following .txt file as input  
-`$cat > file.txt`
-```
-Apples are a type of fruit that come in various colors such as red, green, and yellow.
-Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
-Apples can be used in a variety of dishes such as pies, crisps, and sauces.
-The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
-In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
-Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
-```
+written_2/written_2/berlitz2/Bahamas-History.txt
 
 ## Case Insensitive Search -i | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
-The -i option enables to search for a string case insensitively in the given file. "ApPle" and "APpLe" will result in the same result.  
+The -i option enables to search for a string case insensitively in the given file. "LuCaYans" and "lucayanS" will result in the same result.  
 **Input**   
-`$grep -i "APpLe" file.txt`     
+`james@MacBook-Pro-2 berlitz2 % grep -i "LuCaYans" Bahamas-History.txt`     
 **Output**    
 ```
-Apples are a type of fruit that come in various colors such as red, green, and yellow.
-Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
-Apples can be used in a variety of dishes such as pies, crisps, and sauces.
-The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
-In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
-Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
+Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
-The above command is looking for a line that contains the same case-insensitive string pattern for "APpLe" which is all variations of "apple" in file.txt. Since all 6 lines in file.txt include the string pattern "apple" in any form, `$grep -i "APpLe" file.txt` returns all 6 lines. This command is useful for searching up all instances of a string pattern without thinking about the uppercase and lowercase of each letter.
-
 **Input**   
-`$grep -i "tHe" file.txt`   
+`james@MacBook-Pro-2 berlitz2 % grep -i "lucayanS" Bahamas-History.txt`  
 **Output**    
 ```
-Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
-The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
-In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
-Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
+Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
-The above command is looking for a line that contains the same case-insensitive string pattern for "tHe" in file.txt which is all variations of "the" in file.txt. Since the above 4 lines include the string pattern "the" in any form, `$grep -i "tHe" file.txt` returns the above 4 lines. This command is useful for searching up all instances of a string pattern without thinking about the uppercase and lowercase of each letter.  
+The above commands are looking for a line that contains the same case-insensitive string pattern for "LuCaYans" and "lucayanS" which is all variations of "lucayans" in Bahamas-History.txt. Since 2 lines in Bahamas-History.txt include the string pattern "lucayans" in any form, the command returns 2 lines. This command is useful for searching up all instances of a string pattern without thinking about the uppercase and lowercase of each letter.
   
 ## Displaying the Number of Matches -c | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 We can find the number of lines that matches the given string/pattern.    
 **Input**   
-`$grep -c "Apple" file.txt`     
+`james@MacBook-Pro-2 berlitz2 % grep -c "Lucayans" Bahamas-History.txt`     
 **Output**    
 ```
-4
+2
 ```
-The above command is looking for the number of lines that contains the exact same string pattern for "Apple" in file.txt. Since lines 1, 3, 4, 6 include the string pattern "Apple", the command returns 4. This command is useful for searching up the number of instances a specific string pattern is used within a file.
-
 **Input**   
-`$grep -c "the" file.txt`     
+`james@MacBook-Pro-2 berlitz2 % grep -c "lucayans" Bahamas-History.txt`    
 **Output**    
 ```
-4
+0
 ```
-The above command is looking for the number of lines that contains the exact same string pattern for "the" in file.txt. Since lines 2, 4, 5, 6 include the string pattern "the", the command returns 4. This command is useful for searching up the number of instances a specific string pattern is used within a file including when it used within another word. For example, the string pattern "the" is used in the word "other" in line 6.
+The above command is looking for the number of lines that contains the exact same string pattern for "Apple" in file.txt. Since 2 lines include the string pattern "Lucayans", the command returns 2. However, if the string pattern searched is "lucayans" the command will return 0 since the exact string pattern does not exist within the file. This command is useful for searching up the number of instances a (case sensitive) specific string pattern is used within a file.
 
 ## Show line number with Output -n | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 To show the line number of file with the line matched. 
