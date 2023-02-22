@@ -30,7 +30,7 @@ We can find the number of lines that matches the given string/pattern.
 The above command is looking for the number of lines that contains the exact same string pattern for "Lucayans" and "lucayans in Bahamas-History.txt. Since 2 lines include the string pattern "Lucayans", the command returns 2. However, if the string pattern searched is "lucayans" the command will return 0 since the exact string pattern does not exist within the file. This command is useful for searching up the number of instances a (case sensitive) specific string pattern is used within a file.
 
 ## Show line number with Output -n | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
-To show the line number of file with the line matched. 
+To show the line number of file with the line matched.    
 **Examples**    
 ![Image](3-4.png)   
 ![Image](3-5.png)  
