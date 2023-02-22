@@ -17,15 +17,15 @@ Consider the following .txt file as input
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ## Case Insensitive Search -i | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 The -i option enables to search for a string case insensitively in the given file. "LuCaYans" and "lucayanS" will result in the same result.  
-**Examples**
-![Image](3-1.png)
-![Image](3-2.png)
+**Examples**    
+![Image](3-1.png)   
+![Image](3-2.png)   
 The above commands are looking for a line that contains the same case-insensitive string pattern for "LuCaYans" and "lucayanS" which is all variations of "lucayans" in Bahamas-History.txt. Since 2 lines in Bahamas-History.txt include the string pattern "lucayans" in any form, the command returns 2 lines. This command is useful for searching up all instances of a string pattern without thinking about the uppercase and lowercase of each letter.
   
 ## Displaying the Number of Matches -c | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 We can find the number of lines that matches the given string/pattern.    
-**Examples**
-![Image](3-3.png)
+**Examples**    
+![Image](3-3.png)   
 
 The above command is looking for the number of lines that contains the exact same string pattern for "Apple" in file.txt. Since 2 lines include the string pattern "Lucayans", the command returns 2. However, if the string pattern searched is "lucayans" the command will return 0 since the exact string pattern does not exist within the file. This command is useful for searching up the number of instances a (case sensitive) specific string pattern is used within a file.
 
