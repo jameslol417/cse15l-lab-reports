@@ -27,50 +27,20 @@ We can find the number of lines that matches the given string/pattern.
 **Examples**    
 ![Image](3-3.png)   
 
-The above command is looking for the number of lines that contains the exact same string pattern for "Apple" in file.txt. Since 2 lines include the string pattern "Lucayans", the command returns 2. However, if the string pattern searched is "lucayans" the command will return 0 since the exact string pattern does not exist within the file. This command is useful for searching up the number of instances a (case sensitive) specific string pattern is used within a file.
+The above command is looking for the number of lines that contains the exact same string pattern for "Lucayans" and "lucayans in Bahamas-History.txt. Since 2 lines include the string pattern "Lucayans", the command returns 2. However, if the string pattern searched is "lucayans" the command will return 0 since the exact string pattern does not exist within the file. This command is useful for searching up the number of instances a (case sensitive) specific string pattern is used within a file.
 
 ## Show line number with Output -n | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 To show the line number of file with the line matched. 
-**Input**   
-`$grep -n "Apple" file.txt`     
-**Output**    
-```
-1:Apples are a type of fruit that come in various colors such as red, green, and yellow.
-3:Apples can be used in a variety of dishes such as pies, crisps, and sauces.
-4:The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
-6:Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
-```
-The above command is looking for lines and number of line within the file that contains the exact same string pattern for "Apple" in file.txt.
-Since lines 1, 3, 4, 6 include the string pattern "Apple", the command returns each line with its line number like above.
-This command is useful for searching up for where exactly the string pattern is located within a file and the contents of each line that has it.
-
-**Input**   
-`$grep -n "the" file.txt`   
-**Output**    
-```
-2:Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
-4:The logo of the technology company Apple Inc. features a stylized apple with a bite taken out of it.
-5:In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
-6:Apple cider is a popular autumn beverage made from fermented apples and often spiced with cinnamon and other flavors.
-```
-The above command is looking for lines and number of line within the file that contains the exact same string pattern for "the" in file.txt. Since lines 2, 4, 5, 6 include the string pattern "the", the command returns each line with its line number like above. This command is useful for searching up for where exactly the string pattern is located within a file and the contents of each line that has it.
+**Examples**    
+![Image](3-4.png)   
+![Image](3-5.png)  
+The above command is looking for lines and number of line within the file that contains the exact same string pattern for "Lucayans" and "Bahamas" in Bahamas-History.txt.
+Since lines 6, 7 include the string pattern "Bahamas" and lines 7, 10 include the string pattern "Bermuda", the command returns each line with its line number like above. This command is useful for searching up for where exactly the string pattern is located within a file and the contents of each line that has it.
 
 ## Inverting the Pattern Match -v | Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 You can display the lines that are not matched with the specified search string pattern using the -v option.  
-**Input**   
-`$grep -v "Apple" file.txt`     
-**Output**    
-```
-Eating an apple a day is said to keep the doctor away due to the fruit's high nutritional value.
-In Greek mythology, the golden apple was a symbol of temptation and was the catalyst for the Trojan War.
-```
-The above command is looking for lines within the file that does **not** contain the exact same string pattern for "Apple" in file.txt. Since lines 2, 5 do not include the specific string pattern "Apple", the command only returns the two lines. This command is useful for looking up lines that does not include a specific string pattern.
+**Examples**    
+![Image](3-6.png)   
+![Image](3-7.png)   
 
-**Input**   
-`$grep -v "the" file.txt`   
-**Output**    
-```
-Apples are a type of fruit that come in various colors such as red, green, and yellow.
-Apples can be used in a variety of dishes such as pies, crisps, and sauces.
-```
-The above command is looking for lines within the file that does **not** contain the exact same string pattern for "the" in file.txt. Since lines 1, 3 do not include the string pattern "the", the command only returns the two lines. This command is useful for looking up lines that does not include a specific string pattern.
+The above command is looking for lines within the file that does **not** contain the exact same string pattern for "the" and "is" in Bahamas-History.txt. Since the above lines do not include the specific string pattern "the" and "is", the command returns all lines without the string including blank lines. This command is useful for looking up lines that does not include a specific string pattern.
