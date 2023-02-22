@@ -43,4 +43,7 @@ You can display the lines that are not matched with the specified search string 
 ![Image](3-6.png)   
 ![Image](3-7.png)   
 
-The above command is looking for lines within the file that does **not** contain the exact same string pattern for "the" and "is" in Bahamas-History.txt. Since the above lines do not include the specific string pattern "the" and "is", the command returns all lines without the string including blank lines. This command is useful for looking up lines that does not include a specific string pattern.
+The above command is looking for lines within the file that does **not** contain the exact same string pattern for "the" and "is" in Bahamas-History.txt. Since the above lines do not include the specific string pattern "the" and "is", the command returns all lines without the string including blank lines. This command is useful for looking up lines that does not include a specific string pattern. (By coupling with the option -n mentioned above, it is possible to see which exact lines are returned from -v.)   
+
+![Image](3-8.png)   
+![Image](3-9.png)  
