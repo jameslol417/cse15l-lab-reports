@@ -14,7 +14,7 @@
 ## Logging into ieng6    
 First, I logged into ieng6 by using `<up> ssh cs15lwi23acw@ieng6.ucsd.edu` in order to bring up the command I used before.    
 ![Image](lab4/4-1.png)      
-**Cloning my fork from repository & Running the tests**     
+## Cloning my fork from repository & Running the tests      
 Then, I pressed `<up><up><up><up><up>` to access the command    
 `git clone git@github.com:jameslol417/lab7.git && cd lab7 && javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java && java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`  
 The command first clones into my repository for the fork of lab7, switches the directory to lab7, compiles and runs the JUnit tests to show that they fail at once.   
