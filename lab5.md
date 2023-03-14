@@ -34,7 +34,7 @@ EOF
 At first, the code logs into ieng6 using the ssh command followed by `<< EOF`
 which tells the shell that I am going to enter a multiline string until the "tag" `EOF` which is in the last line of the bash script.       
 Then I first *git clone* into my lab7 repository that I forked before.      
-After changing the directory to lab7 using `cd lab7`, I compile and run the tests to demonstrate that they fail.
+After changing the directory to lab7 using `cd lab7`, I compile and run the tests to demonstrate that they fail.        
 In order to edit the code to fix the failing test, previously, I manually did this through vim which slowed down my process by a lot.       
 However, by using the *sed* command, which is a powerful stream editor that can perform editing tasks on text files I was able to automate the process.     
 `sed -i '43s/index1/index2/' ListExamples.java` has an option `-i` that tells the editor to modify the file in place.       
@@ -45,13 +45,13 @@ Lastly, I use `git add .`, `git commit -m “Updated”` , `git push origin main
 
 ## Running the code in Action
 After writing the script, I ran the code with the following results:    
-![Image](lab5/5-1.png)      
+![Image](lab5/5-1.png)          
 *ListExamples.java before the commit*       
-![Image](lab5/5-4.png)      
+![Image](lab5/5-4.png)          
 *Running the bash script*       
-![Image](lab5/5-5.png)
+![Image](lab5/5-5.png)      
 *Successful log in to ieng6, Cloning to respository, Running tests to demonstrate they fail*    
-![Image](lab5/5-6.png)
-*Modifying the code, Running tests to success, Add&Commit&Pushing the changes*      
-![Image](lab5/5-3.png)      
+![Image](lab5/5-6.png)      
+*Modifying the code, Running tests to success, Add&Commit&Pushing the changes*          
+![Image](lab5/5-3.png)          
 *ListExamples.java after the commit(index1 has been modified to index2)*    
